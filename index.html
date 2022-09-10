@@ -3,10 +3,53 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/styles.css">
-        <script src="js/script.js"></script>
+        <script src="js/script.js" defer></script>
         <title>Rock Paper Scissors</title>
     </head>
     <body>
-        
+        <div class="modal-container invis">
+            <div class="modal">
+                <div class="flex-centerer">
+                    <p class="ending-text"></p>
+                </div>                
+            </div>
+        </div>
+        <main class="container">
+            <h1 class="title">Rock Paper Sissors</h1>
+            <div class="result invis">
+                <h2 class="result">Blah blah</h2>
+            </div>
+            <!-- <div class="display">
+                <div class="player-choice"></div>
+                <div class="computer-choice no-display"></div>
+            </div> -->
+            <div class="scores">
+                <div class="score-wrapper">
+                    <p class="score-head">Player points:</p>
+                    <p class="player-points">0</p>
+                </div>
+                <div class="score-wrapper">
+                    <p class="score-head">Computer points:</p>
+                    <p class="computer-points">0</p>
+                </div>
+            </div>
+            <div class="choices">
+                <p class="choose-head">Choose your weapon:</p>
+                <div class="choices-wrapper">
+                    <div class="choice">
+                        <button class="rock btn"></button>
+                        <p class="choice-description">Rock</p>
+                    </div>
+                    <div class="choice">
+                        <button class="paper btn"></button>
+                        <p class="choice-description">Paper</p>
+                    </div>
+                    <div class="choice">
+                        <button class="scissors btn"></button>
+                        <p class="choice-description">Scissors</p>
+                    </div>
+                </div>
+            </div>
+        </main>
     </body>
 </html>

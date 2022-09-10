@@ -1,0 +1,208 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: rgb(17, 130, 206);
+}
+
+.title {
+    font-size: 5rem;
+    border-radius: 10px;
+    background-color: purple;
+    color: white;
+    padding: 0.2em 0.8em;
+    margin: 30px auto 30px;
+}
+
+.display {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.player-choice {
+    width: 100px;
+    height: 100px;
+    background-image: url(https://i.postimg.cc/6QB0KZCm/rock-resized.jpg);
+}
+
+.computer-choice {
+    width: 100px;
+    height: 100px;
+    background-image: url(https://i.postimg.cc/jqBBb823/paper.jpg);
+}
+
+.score-head {
+    font-size: 3rem;
+    color: white;
+}
+
+.player-points, .computer-points {
+    font-size: 4rem;
+    color: white;
+}
+
+
+.scores {
+    margin: 30px auto;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.score-wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;    
+}
+
+.choices {
+    margin: 70px auto;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.choose-head {
+    font-size: 3rem;
+    color: white;
+}
+
+.choice {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.choice-description {
+    font-size: 2rem;
+    color: white;
+}
+
+.choices-wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.rock {
+    width: 100px;
+    height: 100px;
+    background-image: url(https://i.postimg.cc/6QB0KZCm/rock-resized.jpg);
+}
+
+.paper {
+    width: 100px;
+    height: 100px;
+    background-image: url(https://i.postimg.cc/jqBBb823/paper.jpg);
+}
+
+.scissors {
+    width: 100px;
+    height: 100px;
+    background-image: url(https://i.postimg.cc/RVq2rkvH/scissors-resized.jpg);
+}
+
+/* .no-display {
+    display: none;
+}
+
+.show {
+    animation-name: show;
+    animation-duration: 1s;
+}
+
+.hide {
+    animation-name: hide;
+    animation-duration: 1s;
+}
+
+@keyframes show {
+    from {display: none;}
+    to {display: block;}
+}
+
+@keyframes hide {
+    from {display: block;}
+    to {display: none;}
+} */
+
+.invis {
+    visibility: hidden;
+}
+
+.result {
+    font-size: 3rem;
+    color: white;
+}
+
+.modal-container {
+    position: fixed;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.winner-modal {
+    background-color: #99F443;
+}
+
+.looser-modal {
+    background-color: #00008b;
+}
+
+.ending-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    font-size: 8rem;
+    height: 8rem;
+    width: 600px;
+}
+
+.winner-text {
+    color: #EC449B;
+}
+
+.looser-text {
+    color: #ADD8E6;
+}
+
+.flex-centerer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
